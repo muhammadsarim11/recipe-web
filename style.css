@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 
@@ -26,7 +27,7 @@ nav input {
 padding: 10px 22px;
 border: none;
 border-radius: 10px;
-
+font-weight: 600;
 margin-right: 1vw;
 
 
@@ -39,6 +40,7 @@ border-radius: 10px;
 margin-right: 2vw;
 transition: .1s;
 background-color: salmon;
+font-weight:bold ;
 
 }
 main{
@@ -164,6 +166,14 @@ padding: 10px;
         flex-direction: column;
         
     }
+
+    main{
+margin-inline :3vw ;
+display: flex;
+align-items: center;
+justify-content: center;
+
+    }
     nav input{
     margin: 2vw;
     width: 60%;
@@ -189,16 +199,18 @@ padding: 10px;
     }
 
     .recipe h3{
-        font-size: 3.5vw;
-         padding: 8px;
+        font-size: 3.2vw;
+         padding: 11px;
         /* margin: 5px; */
         text-align: center;
+        white-space: pre-line;
+        
         
      }
     .recipe p{
         font-size: 3vw;
         padding: 5px;
-font-family: 300;
+
     }
 
 
@@ -209,6 +221,7 @@ font-family: 300;
     .recipe button{
         padding: 7px 15px;
         font-size: 14px;
+        font-weight: bold;
     }
     /* .recipe-detail{
         height: 200px;
@@ -237,6 +250,18 @@ font-family: 300;
    
     .list-ingredients{
         font-size: 14px;
+    }
+.recipe-container h1{
+    text-align: start;
+    width: 70%;
+}
+
+
+    .recipe{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
     }
 
 }
