@@ -29,7 +29,7 @@ nav input {
 padding: 10px 22px;
 border: none;
 border-radius: 10px;
-font-weight: 600;
+font-weight: bold;
 margin-right: 1vw;
 
 
@@ -42,7 +42,8 @@ border-radius: 10px;
 margin-right: 2vw;
 transition: .1s;
 background-color: salmon;
-font-weight:bold ;
+font-weight:900 ;
+    color:black;
 
 }
 main{
