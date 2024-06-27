@@ -6,6 +6,8 @@ var recipeClose = document.querySelector(".recipe-close-btn")
 
 const fetchRecipe = async (query) =>{
 recipecontainer.innerHTML="<h1>Searching recipes...<h1>"
+try {
+    
 
 
     const data = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`
@@ -21,9 +23,9 @@ response.meals.forEach(meal => {
 
     recipeDiv.innerHTML = `
     <img src= "${meal.strMealThumb}">
-    <h3>${meal.strMeal}</h3>
-    <p>${meal.strArea} Dish</p>
-    <p>${meal.strCategory}</p>
+    <h3 class="name">${meal.strMeal}</h3>
+    <p class="dish-name">${meal.strArea} Dish</p>
+    <p class="category-name">category:${meal.strCategory}</p>
     `
 const button = document.createElement('button')
 button.textContent = "View Recipe"
@@ -37,6 +39,10 @@ button.addEventListener('click',()=>{
 
     recipecontainer.appendChild(recipeDiv)
 });
+} catch (error) {
+recipecontainer.innerHTML="<h1>Recipe is not Available ...<h1>"
+    
+}
 
 }
 // function for fetching ingrediants
