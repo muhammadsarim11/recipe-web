@@ -222,6 +222,7 @@ justify-content: center;
          padding: 11px;
         /* margin: 5px; */
         text-align: center;
+        line-height: 20px;
         white-space: pre-line;
         
         
@@ -269,6 +270,8 @@ justify-content: center;
    
     .list-ingredients{
         font-size: 14px;
+        font-weight: 500;
+        list-style-type: none;
     }
 .recipe-container h1{
     text-align: start;
@@ -286,15 +289,22 @@ justify-content: center;
     .recipe-detail{
         height: 200px;
         width: 300px;
+        
     }
 
 .recipe-instruction{
     line-height: 20px;
     font-weight: 500;
+    margin-inline: 5px;
+
 }
 
 .recipe-close-btn{
     border-radius: 10px;
+}
+
+.list-ingredients{
+    margin-inline: 5px;
 }
 
 }
